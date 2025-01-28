@@ -1,0 +1,38 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-12">
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" [(ngModel)]="cedula">
+        <label for="floatingInput">Cedula</label>
+      </div>
+    </div>
+    <button class="btn btn-primary mb-3" (click)="getUsuarioByCedula()">Buscar Usuario</button>
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="floatingInput" [(ngModel)]="nombre" readonly>
+      <label for="floatingNombre">Nombre</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="floatingInput" [(ngModel)]="cedula"  readonly>
+      <label for="floatingCedula">Cedula</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="floatingInput" [(ngModel)]="telefono" readonly>
+      <label for="floatingtelefono">teléfono</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="floatingInput" [(ngModel)]="direccion"  readonly>
+      <label for="floatingDireccion">Dirección</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="floatingInput" [(ngModel)]="correo"  readonly>
+      <label for="floatingCorreo">Correo</label>
+    </div>
+  </div>
+
+<!-- Botón para navegar a la lista de usuarios -->
+<button (click)="navegarAListarUsuarios()" class="btn btn-secondary btn-block mt-3 my-4">Listar Usuarios</button> 
+
+</div>

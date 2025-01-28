@@ -1,0 +1,25 @@
+<div class="container mt-3">
+  <div class="row">
+      <div class="col-10">
+          <div class="list-group">
+              <a *ngFor="let usuario of usuarios" (click)="redirectToEditarUsuario(usuario.idusuario)" class="list-group-item list-group-item-action" aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">{{usuario.nombreusuario}}</h5>
+                  <small>3 days ago</small>
+                </div>
+                <p class="mb-1">{{usuario.correousuario}}</p>
+                <small><b>Telefono</b>: {{usuario.telefonousuario}} </small>
+                <small><b>Cedula</b>: {{usuario.cedulausuario}}</small><br>
+                <small><b>Direccion</b>: {{usuario.direccionusuario}}</small>
+              </a>
+          </div>
+      </div>
+  </div>
+  <button class="btn btn-primary me-2 btn-block my-3" (click)="navegarAInsertarUsuario()">Agregar un nuevo usuario</button>
+  <button class="btn btn-primary me-2 btn-block my-2" (click)="navegarABuscarUsuario()">Buscar un usuario por cedula</button>
+</div>
+
+
+
+
+
